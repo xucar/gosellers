@@ -1,1 +1,3 @@
 # goseller
+
+PIM en desarollo.

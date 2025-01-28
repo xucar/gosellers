@@ -1,0 +1,259 @@
+{
+	"info": {
+		"_postman_id": "ae44995e-6879-44d8-8659-d066ade0249f",
+		"name": "goseller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29880638"
+	},
+	"item": [
+		{
+			"name": "Products json",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "cfeb0547be7fcd7121182af7a0606da1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://xucar.es/api/products/json",
+					"protocol": "https",
+					"host": [
+						"xucar",
+						"es"
+					],
+					"path": [
+						"api",
+						"products",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://xucar.es/api/products/json",
+							"protocol": "https",
+							"host": [
+								"xucar",
+								"es"
+							],
+							"path": [
+								"api",
+								"products",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 28 Jan 2025 05:48:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-Served-By",
+							"value": "xucar.es"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=jhDd8AaL%2BRBhX%2FGyuHF7RV0U56AKk0Otpp5eBuanFspjQpqepqK4%2FBz7NqQWPVhE4PYhCphQxxejx4QUUBs%2FFCqU0soZgnKOEeecUOjbt859OeBMn6VhGzzakg%3D%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "908eb1373f39f771-MAD"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						},
+						{
+							"key": "server-timing",
+							"value": "cfL4;desc=\"?proto=TCP&rtt=38988&min_rtt=15704&rtt_var=40405&sent=42&recv=42&lost=0&retrans=1&sent_bytes=5568&recv_bytes=889&delivery_rate=53780&cwnd=213&unsent_bytes=0&cid=b4b8e594189a6cbf&ts=35707&x=0\""
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"sku\": \"1223K/L\",\n        \"stock\": 20,\n        \"dateUpd\": {\n            \"date\": \"2025-01-27 16:57:34.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    },\n    {\n        \"sku\": \"1223K/M\",\n        \"stock\": 20,\n        \"dateUpd\": {\n            \"date\": \"2025-01-27 16:57:34.000000\",\n            \"timezone_type\": 3,\n            \"timezone\": \"UTC\"\n        }\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Products csv",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "cfeb0547be7fcd7121182af7a0606da1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.50.2:8081/api/products/csv",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"50",
+						"2"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"products",
+						"csv"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.50.2:8081/api/products/csv",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"50",
+								"2"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"products",
+								"csv"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 28 Jan 2025 05:48:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.41 (Ubuntu)"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Disposition",
+							"value": "attachment; filename=\"products2025-01-28-05-48-40.csv\""
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/csv; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "sku;stock\n1223K/L;20\n1223K/M;20"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "goseller_token",
+			"value": "key",
+			"type": "string"
+		}
+	]
+}
